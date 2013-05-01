@@ -64,6 +64,8 @@ class RouteCollection
         $defaults['_sonata_name'] = $routeName;
 
         $this->elements[$this->getCode($name)] = new Route($pattern, $defaults, $requirements, $options);
+        
+        return $this;
     }
 
     /**
